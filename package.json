@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/pm2 start pm2.json",
+    "dev": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/332065255/f.lux.js/issues"
   },
-  "homepage": "https://github.com/332065255/f.lux.js#readme"
+  "homepage": "https://github.com/332065255/f.lux.js#readme",
+  "dependencies": {
+    "koa": "^2.6.2",
+    "pm2": "^3.2.3"
+  }
 }
